@@ -1,0 +1,1 @@
+A simple webapp based on justpy as an example/template for any multipage simple functionality.
