@@ -4,6 +4,7 @@ from webapp import page
 from webapp.about import About
 from webapp.home import Home
 from webapp.dictionary import Dictionary
+import os
 
 imports = list(globals().values())
 
@@ -16,4 +17,7 @@ for obj in imports:
 # jp.Route(About.path, About.serve)
 # jp.Route(Dictionary.path, Dictionary.serve)
 
-jp.justpy(port=10000)
+# Render provides the port number in the environment variable PORT
+port = int(os.environ.get("PORT", 8000))
+
+jp.justpy(host="0.0.0.0", port=port)
