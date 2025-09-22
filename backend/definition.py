@@ -2,7 +2,7 @@ import pandas as pd
 
 def get(term):
 
-    df = pd.read_csv("data.csv")
+    df = pd.read_csv("backend/data.csv")
     return tuple(df.loc[df["word"]==term]["definition"])
 
 # class Definition:
