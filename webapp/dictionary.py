@@ -1,6 +1,6 @@
 import justpy as jp
 from webapp.layout import DefaultLayout
-import definition
+import backend.definition as definition
 from webapp import page
 
 class Dictionary(page.Page):
